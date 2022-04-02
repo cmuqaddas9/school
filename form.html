@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> creating html form </title>
+        <style>
+            form{
+                border: 4px solid black;
+                text-align: center;
+                background-color: rgb(167, 241, 241);
+                border-width: 30px;
+                border-right-width: 40px;
+                padding: 20;
+                margin: 40px;
+
+                
+            }
+            button{
+                color: rgb(1, 54, 56);
+                background-color: cadetblue;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1> html form </h1>
+        <hr>
+        <form action="">
+            <br> 
+            <label for="fname"> First name: </label><br>
+            <input type="text" id="fname" name="fname"required ><br>
+            <label for="lname"> Last Name: </label><br>
+            <input type="text" id="lname" name="lname"required><br>
+            <label for="phone no"> Phone Number: </label><br>
+            <input type="tel" id="phone" name="phone"required><br>
+            <label for="email"> Email:</label><br>
+            <input type="email" id="email" name="email"required><br><br>
+            
+            <label for="Color">Choose your favourite Color </label><br><br>
+            <input type="radio" id="y1" name="fc" value="yellow" required>
+            <label for="y1">Yellow</label>
+            <input type="radio" id="r1" name="fc" value="red"required>
+            <label for="r1">Red</label>
+            <input type="radio" id="b1" name="fc" value="blue"required>
+            <label for="b1">Blue</label><br><br>
+
+            <label for="flower">Choose a flower:</label>
+            <select id=" flowers" name="flowers" size="4" multiple>
+            <option value="rose">Rose</option>
+            <option value="lily">Lily</option>
+            <option value="Sun flower">Sun flower</option>
+            <option value="daisy" selected>Daisy</option>
+        <br><br>
+           
+            <input type="submit" value="Submit"><br><br>
+            
+        </select><br>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+        <input type="password"required><br><br>
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone"
+        placeholder="0000-0000000"
+        pattern="[0-9]{4}-[0-9]{7}"required>
+
+        <label for="CNIC">Enter CNIC:</label>
+        <input type="CNIC" id="CNIC" name="CNIC"
+        placeholder="00000-0000000-0"
+        pattern="[0-9]{5}-[0-9]{7}-[0-9]{1} "required>
+
+
+        <button type="button" onclick="alert('hi this is form page')">Click Me!</button><br><br>
+        
+        
+
+        </form>
+        <br><hr>
+       </body>
+</html> 
